@@ -1,53 +1,55 @@
 {
   "name": "vanilla-js-library-template",
   "version": "0.0.1",
-  "private": true,
   "description": "Template for production ready vanilla js library",
-  "keywords": [
-    "vanilla",
-    "js",
-    "template",
-    "production",
-    "library"
-  ],
-  "bugs": {
-    "url": "https://github.com/timelessco/vanilla-js-library-template/issues"
-  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/timelessco/vanilla-js-library-template.git"
   },
-  "license": "MIT",
-  "author": {
-    "name": "Timeless",
-    "email": "hello@timeless.co",
-    "url": "https://timeless.co/"
+  "bugs": {
+    "url": "https://github.com/timelessco/vanilla-js-library-template/issues"
   },
-  "files": [
-    "lib"
-  ],
+  "author": "Timeless <hello@timeless.co> (https://timeless.co/)",
+  "license": "MIT",
+  "private": true,
   "main": "./lib/vanilla-js-library-template.umd.js",
   "module": "./lib/vanilla-js-library-template.es.js",
-  "browser": "./lib/vanilla-js-library-template.umd.js",
-  "unpkg": "./lib/vanilla-js-library-template.umd.js",
   "exports": {
     ".": {
       "import": "./lib/vanilla-js-library-template.es.js",
       "require": "./lib/vanilla-js-library-template.umd.js"
     }
   },
+  "browser": "./lib/vanilla-js-library-template.umd.js",
+  "unpkg": "./lib/vanilla-js-library-template.umd.js",
+  "files": [
+    "lib"
+  ],
+  "keywords": [
+    "js",
+    "library",
+    "production",
+    "template",
+    "vanilla"
+  ],
   "scripts": {
-    "dev": "vite --host",
     "build": "vite build",
-    "preview": "vite preview",
     "build:lib": "vite build --config vite-lib.config.js",
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "vite --host",
     "format": "prettier -l --cache \"./**/*.{html,css,js,jsx,ts,tsx,md,json}\"",
     "format:fix": "prettier --write --cache --check \"./**/*.{html,css,js,jsx,ts,tsx,md,json}\"",
-    "lint:css": "stylelint '**/*.css' --fix --cache --color --ignore-path .prettierignore -f verbose"
+    "lint": "eslint --cache --color --ext .js,.jsx,.ts,.tsx .",
+    "lint:fix": "eslint --cache --color --ext .js,.jsx,.ts,.tsx . --fix",
+    "lint:styles": "stylelint '**/*.css' --cache --color --ignore-path .prettierignore -f verbose",
+    "lint:styles:fix": "stylelint '**/*.css' --fix --cache --color --ignore-path .prettierignore -f verbose",
+    "preview": "vite preview",
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "devDependencies": {
+    "@trivago/prettier-plugin-sort-imports": "^4.0.0",
     "prettier": "2.8.0",
+    "prettier-plugin-organize-imports": "^3.2.1",
+    "prettier-plugin-pkg": "^0.17.1",
     "stylelint": "14.15.0",
     "stylelint-config-standard": "29.0.0",
     "vite": "^3.2.4"

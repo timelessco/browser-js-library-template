@@ -36,4 +36,7 @@ module.exports = {
   endOfLine: "lf",
   // formats quoted code embedded
   embeddedLanguageFormatting: "auto",
+
+  // Plugins
+  plugins: ["prettier-plugin-pkg"],
 };
