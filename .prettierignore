@@ -19,9 +19,8 @@ storybook-static
 .idea
 *.env
 
-# Optional tool caches
+# Optional eslint cache
 .eslintcache
-.stylelintcache
 
 # Logs
 *.log*
@@ -54,7 +53,11 @@ jspm_packages
 # Typescript
 *.tsbuildinfo
 
-## library folder
-lib
-dist
+# Lock files
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
 
+# Library files
+dist
+lib
