@@ -48,7 +48,7 @@ jobs:
         run: pnpm install --frozen-lockfile
 
   lint:
-    name: Lint
+    name: Check lint & format
     needs: cache-and-install
     runs-on: ubuntu-latest
 
@@ -86,7 +86,7 @@ jobs:
         run: pnpm install --frozen-lockfile
 
       - name: Lint
-        run: pnpm run lint
+        run: pnpm run check
 
   build:
     name: Build
