@@ -35,8 +35,8 @@
     "vanilla"
   ],
   "scripts": {
-    "build": "vite build",
-    "build:lib": "vite build --config vite-lib.config.js",
+    "build": "vite build --config vite-lib.config.js",
+    "build:website": "vite build",
     "check": "pnpm lint:check && pnpm csslint:check && pnpm format:check",
     "commit": "gacp",
     "csslint:check": "stylelint '**/*.css' --cache --color --ignore-path .prettierignore -f verbose",

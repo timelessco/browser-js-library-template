@@ -31,12 +31,12 @@ This will start a development server at `http://localhost:3000`, and you can
 view the application in your browser. Any changes you make to the code will be
 automatically reloaded in the browser.
 
-## Build
+## Build Website
 
 To build the project for production, run the following command:
 
 ```
-npm run build
+npm run build:website
 ```
 
 This will generate a production-ready build in the `dist` folder.
@@ -46,7 +46,7 @@ This will generate a production-ready build in the `dist` folder.
 To build the project for production, run the following command:
 
 ```
-npm run build:lib
+npm run build
 ```
 
 This will generate a production-ready build library in the `lib` folder.
