@@ -38,5 +38,31 @@ module.exports = {
   embeddedLanguageFormatting: "auto",
 
   // Plugins
-  plugins: ["prettier-plugin-pkg"],
+  plugins: ["prettier-plugin-pkg", "@ianvs/prettier-plugin-sort-imports"],
+
+  // @ianvs/prettier-plugin-sort-imports
+  importOrder: [
+    // Packages.
+    // Things that start with a letter (or digit or underscore), or `@` followed by a letter.
+    "^@?\\w",
+    "",
+    // Absolute imports and other imports such as Vue-style `@/foo`.
+    // Anything that does not start with a dot.
+    "^../",
+    "",
+    "^./",
+    "",
+
+    // Relative imports.
+    // Anything that starts with two dots.
+
+    // Style imports.
+    "^.+\\.s?css$",
+  ],
+  importOrderSortSpecifiers: true,
+  importOrderCaseInsensitive: true,
+  importOrderMergeDuplicateImports: true,
+  importOrderCombineTypeAndValueImports: true,
+  importOrderBuiltinModulesToTop: true,
+  importOrderParserPlugins: ["typescript", "jsx", "decorators-legacy"],
 };

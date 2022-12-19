@@ -1,5 +1,6 @@
 import path from "path";
 import { defineConfig } from "vite";
+
 import packageJson from "./package.json";
 
 const getPackageName = () => {
@@ -19,7 +20,7 @@ const fileName = {
   umd: `${getPackageName()}.umd.js`,
 };
 
-module.exports = defineConfig({
+export default defineConfig({
   base: "./",
   build: {
     outDir: path.resolve(__dirname, "lib"),

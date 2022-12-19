@@ -19,7 +19,7 @@ storybook-static
 .idea
 *.env
 
-# cache
+# Cache
 .eslintcache
 .stylelintcache
 
