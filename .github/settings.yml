@@ -15,7 +15,7 @@ repository:
     used in production."
 
   # A URL with more information about the repository
-  homepage: https://example.github.io/
+  homepage: https://github.com/timelessco/js-library-template#readme
 
   # A comma-separated list of topics to set on the repository
   topics: "js, library, production, template, vanilla"
