@@ -1,13 +1,11 @@
 module.exports = {
   hooks: {
-    "before:init": [
-      'if [ "$(git log $(git describe --tags --abbrev=0)..HEAD)" = "" ]; then exit 1; fi;',
-      "pnpm test",
-      "pnpm build",
-    ],
+    "before:init": ["pnpm check", "pnpm build"],
   },
   git: {
     requireBranch: "main",
+    requireCommits: true,
+    requireCleanWorkingDir: true,
     commitMessage: "🚀 Release v${version}",
     commitArgs: ["--no-verify", "-S"],
     tagArgs: ["-s"],
