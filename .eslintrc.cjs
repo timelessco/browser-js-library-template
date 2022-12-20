@@ -13,25 +13,5 @@ module.exports = {
     "import/no-webpack-loader-syntax": "error",
     "import/no-extraneous-dependencies": "off",
     "import/prefer-default-export": "off",
-    // "import/order": [
-    //   "error",
-    //   {
-    //     groups: [
-    //       ["builtin", "external"],
-    //       "internal",
-    //       "parent",
-    //       "sibling",
-    //       "index",
-    //       "object",
-    //     ],
-    //     "newlines-between": "always",
-    //     // distinctGroup: false,
-    //     alphabetize: {
-    //       order: "asc",
-    //       caseInsensitive: true,
-    //     },
-    //     warnOnUnassignedImports: true,
-    //   },
-    // ],
   },
 };
