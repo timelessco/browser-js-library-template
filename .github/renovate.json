@@ -33,7 +33,7 @@
     {
       "matchDatasources": ["npm"],
       "groupName": "renovate-meta",
-      "labels": ["OtherDependencies", "automerge 🚀"]
+      "labels": ["OtherDependencies"]
     },
     {
       "groupName": "dependencies (non-major)",
@@ -47,7 +47,7 @@
         "rollback",
         "bump"
       ],
-      "labels": ["Dependency", "automerge 🚀"]
+      "labels": ["Dependency"]
     },
     {
       "groupName": "devDependencies (non-major)",
@@ -61,7 +61,7 @@
         "rollback",
         "bump"
       ],
-      "labels": ["DevDependency", "automerge 🚀"]
+      "labels": ["DevDependency"]
     },
     {
       "groupName": "dependencies (major)",

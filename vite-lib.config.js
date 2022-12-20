@@ -20,15 +20,17 @@ const fileName = {
   umd: `${getPackageName()}.umd.js`,
 };
 
-export default defineConfig({
-  base: "./",
-  build: {
-    outDir: path.resolve(__dirname, "lib"),
-    lib: {
-      entry: path.resolve(__dirname, "src/index.js"),
-      name: getPackageNameCamelCase(),
-      formats: ["es", "umd"],
-      fileName: format => fileName[format],
+export default defineConfig(() => {
+  return {
+    base: "./",
+    build: {
+      outDir: path.resolve(__dirname, "lib"),
+      lib: {
+        entry: path.resolve(__dirname, "src/index.js"),
+        name: getPackageNameCamelCase(),
+        formats: ["es", "umd"],
+        fileName: format => fileName[format],
+      },
     },
-  },
+  };
 });
