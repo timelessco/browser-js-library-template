@@ -57,7 +57,7 @@
   },
   "dependencies": {
     "gacp": "^3.0.0",
-    "vite": "^3.2.5"
+    "vite": "^4.0.0"
   },
   "devDependencies": {
     "@commitlint/cli": "^17.3.0",
