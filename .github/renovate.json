@@ -1,6 +1,7 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "extends": ["config:base", ":semanticCommitTypeAll(chore)"],
+  "schedule": ["after 12pm and before 5am every weekday", "every weekend"],
   "commitMessageAction": "⬆️ update",
   "commitMessageTopic": "{{depName}}",
   "pinVersions": false,
@@ -8,7 +9,6 @@
   "prCreation": "immediate",
   "timezone": "Asia/Kolkata",
   "rangeStrategy": "bump",
-  "stabilityDays": 10,
   "prHourlyLimit": 10,
   "prConcurrentLimit": 10,
   "separateMultipleMajor": true,

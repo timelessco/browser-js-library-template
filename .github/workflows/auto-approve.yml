@@ -9,7 +9,7 @@ jobs:
     runs-on: ubuntu-latest
     permissions:
       pull-requests: write
-    if: github.actor == 'renovate[bot]' || github.actor == 'navin-moorthy'
+    if: github.actor == 'renovate[bot]'
     steps:
       - uses: hmarr/auto-approve-action@v3
         with:
