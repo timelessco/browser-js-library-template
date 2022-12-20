@@ -65,13 +65,17 @@ labels:
     description: "Changelog Added"
     color: "90db3f"
 
-  - name: "Changed"
-    description: "Changelog Changed"
+  - name: "OtherDependencies"
+    description: "OtherDependencies Changed"
     color: "fbca04"
 
   - name: "Dependency"
     description: "Pull requests that update a dependency file"
     color: "e1f788"
+
+  - name: "DevDependency"
+    description: "Pull requests that update a dev dependency file"
+    color: "fd73c3"
 
   - name: "Deprecated"
     description: "Changelog Deprecated"
@@ -134,8 +138,8 @@ labels:
 # Collaborators: give specific users access to this repository.
 # See https://docs.github.com/en/rest/reference/repos#add-a-repository-collaborator for available options
 collaborators:
-  - username: navin-moorthy
-    permission: admin
+  # - username: navin-moorthy
+  #   permission: admin
   # - username: hubot
   #   permission: pull
 
@@ -147,18 +151,18 @@ branches:
       # Required. Require at least one approving review on a pull request, before merging. Set to null to disable.
       required_pull_request_reviews:
         # The number of approvals required. (1-6)
-        # required_approving_review_count: 1
+        required_approving_review_count: 1
         # Dismiss approved reviews automatically when a new commit is pushed.
         dismiss_stale_reviews: true
         # Blocks merge until code owners have reviewed.
         # require_code_owner_reviews: true
         # Specify which users and teams can dismiss pull request reviews. Pass an empty dismissal_restrictions object to disable. User and team dismissal_restrictions are only available for organization-owned repositories. Omit this parameter for personal repositories.
         dismissal_restrictions:
-          users: ["navin-moorthy"]
+          users: []
           teams: []
         # Allow specific users, teams, or apps to bypass pull request requirements.
         bypass_pull_request_allowances:
-          users: ["navin-moorthy"]
+          users: ["renovate", "kodiakhq"]
           teams: []
       # Required. Require status checks to pass before merging. Set to null to disable
       required_status_checks:

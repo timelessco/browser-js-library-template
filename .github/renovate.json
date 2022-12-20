@@ -1,71 +1,87 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
-  "extends": ["config:base", ":timezone(Asia/Kolkata)"],
-  "ignoreUnstable": true,
+  "extends": ["config:base", ":semanticCommitTypeAll(chore)"],
+  "commitMessageAction": "⬆️ update",
+  "commitMessageTopic": "{{depName}}",
   "pinVersions": false,
-  "rebaseStalePrs": true,
+  "dependencyDashboardTitle": "Renovate Dependency Updates",
+  "prCreation": "immediate",
+  "timezone": "Asia/Kolkata",
+  "stabilityDays": 10,
   "separateMultipleMajor": true,
-  "labels": ["Dependency", "Changed"],
-  "composer": {
-    "enabled": true
-  },
-  "major": {
-    "semanticCommitType": "chore",
-    "semanticCommitScope": "deps"
-  },
+  "separateMinorPatch": true,
+  "ignoreUnstable": true,
+  "rebaseStalePrs": true,
+  "prHourlyLimit": 1,
+  "prConcurrentLimit": 20,
+  "composer": { "enabled": true },
   "vulnerabilityAlerts": {
     "enabled": true,
     "labels": ["Security", "Type: Critical"]
   },
+  "automerge": true,
+  "major": {
+    "automerge": false
+  },
+  "automergeStrategy": "squash",
+  "lockFileMaintenance": {
+    "enabled": true,
+    "automerge": true,
+    "automergeType": "pr",
+    "platformAutomerge": true
+  },
   "packageRules": [
     {
-      "groupName": "renovate-meta",
-      "automerge": true,
-      "updateTypes": ["lockFileMaintenance", "minor", "patch", "pin", "digest"],
-      "labels": ["Dependency", "Changed", "automerge 🚀"],
-      "semanticCommitType": "fix",
-      "semanticCommitScope": "deps",
-      "semanticCommits": "enabled",
-      "datasources": ["npm"]
-    },
-    {
-      "groupName": "dependencies (major)",
-      "automerge": false,
-      "depTypeList": ["require"],
-      "updateTypes": ["major"],
-      "labels": ["Dependency", "Changed"],
-      "semanticCommitType": "fix",
-      "semanticCommitScope": "deps",
-      "semanticCommits": "enabled"
-    },
-    {
       "groupName": "dependencies (non-major)",
-      "automerge": true,
-      "depTypeList": ["dependencies", "require"],
-      "updateTypes": ["patch", "minor", "pin", "digest"],
-      "labels": ["Dependency", "Changed", "automerge 🚀"],
-      "semanticCommitType": "fix",
-      "semanticCommitScope": "deps",
-      "semanticCommits": "enabled"
-    },
-    {
-      "groupName": "devDependencies (major)",
-      "automerge": false,
-      "depTypeList": ["devDependencies", "require-dev"],
-      "updateTypes": ["major"],
-      "labels": ["Dependency", "Changed"],
-      "semanticCommitType": "chore",
-      "semanticCommitScope": "deps",
-      "semanticCommits": "enabled"
+      "matchDepTypes": ["dependencies"],
+      "matchUpdateTypes": [
+        "minor",
+        "patch",
+        "pin",
+        "pinDigest",
+        "digest",
+        "rollback",
+        "bump"
+      ],
+      "labels": ["Dependency", "automerge 🚀"]
     },
     {
       "groupName": "devDependencies (non-major)",
-      "automerge": true,
-      "depTypeList": ["devDependencies", "require-dev"],
-      "updateTypes": ["patch", "minor", "pin", "digest"],
-      "labels": ["Dependency", "Changed", "automerge 🚀"],
-      "semanticCommitType": "chore",
-      "semanticCommitScope": "deps",
+      "matchDepTypes": ["devDependencies"],
+      "matchUpdateTypes": [
+        "minor",
+        "patch",
+        "pin",
+        "pinDigest",
+        "digest",
+        "rollback",
+        "bump"
+      ],
+      "labels": ["DevDependency", "automerge 🚀"]
+    },
+    {
+      "groupName": "dependencies (major)",
+      "matchDepTypes": ["dependencies"],
+      "matchUpdateTypes": ["major"],
+      "labels": ["DevDependency"],
+      "prPriority": 1
+    },
+    {
+      "groupName": "devDependencies (major)",
+      "matchDepTypes": ["devDependencies"],
+      "matchUpdateTypes": ["major"],
+      "labels": ["Dependency"],
+      "prPriority": 1
+    },
+    {
+      "matchPackagePatterns": ["^@types/"],
+      "groupName": "definitelyTyped",
+      "labels": ["DevDependency"]
+    },
+    {
+      "matchDatasources": ["npm"],
+      "groupName": "renovate-meta",
+      "labels": ["OtherDependencies", "automerge 🚀"],
       "semanticCommits": "enabled"
     }
   ]
