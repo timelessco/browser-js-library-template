@@ -2444,7 +2444,7 @@ functions-have-names@^1.2.2:
   resolved "https://registry.yarnpkg.com/functions-have-names/-/functions-have-names-1.2.3.tgz#0404fe4ee2ba2f607f0e0ec3c80bae994133b834"
   integrity sha512-xckBUXyTIqT97tq2x2AMb+g163b5JFysYk0x4qxNFwbfQkmNZoiRHb6sPzI9/QV33WeuvVYBUIiD4NzNIyqaRQ==
 
-gacp@^3.0.0:
+gacp@^3.0.3:
   version "3.0.3"
   resolved "https://registry.yarnpkg.com/gacp/-/gacp-3.0.3.tgz#6698f661d81d8f4f3a10226b000e806bbf3f4301"
   integrity sha512-ncBb1MI/TRWhGVIRHJYl2MkLfVzrKHdy+9YlqzbdpAx0/yOktJQjrNeH0ublga49Jzk7VoSU8QdUfEexDJOd6g==

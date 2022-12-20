@@ -10,7 +10,7 @@ specifiers:
   eslint-config-prettier: ^8.5.0
   eslint-plugin-import: ^2.26.0
   eslint-plugin-prettier: ^4.2.1
-  gacp: ^3.0.0
+  gacp: ^3.0.3
   husky: ^8.0.2
   lint-staged: ^13.1.0
   pinst: ^3.0.0
