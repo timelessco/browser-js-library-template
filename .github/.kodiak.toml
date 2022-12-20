@@ -21,7 +21,7 @@ automerge_label = ['automerge 🚀'] # default: "automerge"
 #
 # When disabled, Kodiak will immediately attempt to merge any PR that passes all
 # GitHub branch protection requirements.
-require_automerge_label = true
+require_automerge_label = false
 
 # Choose merge method for Kodiak to use.
 #
