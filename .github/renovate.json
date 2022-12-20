@@ -5,7 +5,7 @@
   "pinVersions": false,
   "rebaseStalePrs": true,
   "separateMultipleMajor": true,
-  "labels": ["dependency", "Changed"],
+  "labels": ["Dependency", "Changed"],
   "composer": {
     "enabled": true
   },
@@ -22,7 +22,7 @@
       "groupName": "renovate-meta",
       "automerge": true,
       "updateTypes": ["lockFileMaintenance", "minor", "patch", "pin", "digest"],
-      "labels": ["dependency", "Changed"],
+      "labels": ["Dependency", "Changed", "automerge 🚀"],
       "semanticCommitType": "fix",
       "semanticCommitScope": "deps",
       "semanticCommits": "enabled",
@@ -33,6 +33,8 @@
       "automerge": false,
       "depTypeList": ["require"],
       "updateTypes": ["major"],
+      "labels": ["Dependency", "Changed"],
+      "semanticCommitType": "fix",
       "semanticCommitType": "deps",
       "semanticCommits": "enabled"
     },
@@ -41,16 +43,17 @@
       "automerge": true,
       "depTypeList": ["dependencies", "require"],
       "updateTypes": ["patch", "minor", "pin", "digest"],
+      "labels": ["Dependency", "Changed", "automerge 🚀"],
       "semanticCommitType": "fix",
       "semanticCommitScope": "deps",
       "semanticCommits": "enabled"
     },
     {
       "groupName": "devDependencies (major)",
-      "automerge": true,
+      "automerge": false,
       "depTypeList": ["devDependencies", "require-dev"],
       "updateTypes": ["major"],
-      "labels": ["dependency", "Changed"],
+      "labels": ["Dependency", "Changed"],
       "semanticCommitType": "chore",
       "semanticCommitScope": "deps",
       "semanticCommits": "enabled"
@@ -60,7 +63,7 @@
       "automerge": true,
       "depTypeList": ["devDependencies", "require-dev"],
       "updateTypes": ["patch", "minor", "pin", "digest"],
-      "labels": ["dependency", "Changed"],
+      "labels": ["Dependency", "Changed", "automerge 🚀"],
       "semanticCommitType": "chore",
       "semanticCommitScope": "deps",
       "semanticCommits": "enabled"
