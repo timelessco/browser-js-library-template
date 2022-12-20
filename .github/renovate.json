@@ -1,7 +1,7 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "extends": ["config:base", ":semanticCommitTypeAll(chore)"],
-  "schedule": ["after 12pm and before 5am every weekday", "every weekend"],
+  "schedule": ["after 12am and before 5am every weekday", "every weekend"],
   "commitMessageAction": "⬆️ update",
   "commitMessageTopic": "{{depName}}",
   "pinVersions": false,
@@ -9,8 +9,8 @@
   "prCreation": "immediate",
   "timezone": "Asia/Kolkata",
   "rangeStrategy": "bump",
-  "prHourlyLimit": 20,
-  "prConcurrentLimit": 20,
+  "prHourlyLimit": 10,
+  "prConcurrentLimit": 10,
   "separateMultipleMajor": true,
   "separateMinorPatch": true,
   "rebaseStalePrs": true,
@@ -34,7 +34,7 @@
       "groupName": "dependencies (major)",
       "matchDepTypes": ["dependencies"],
       "matchUpdateTypes": ["major"],
-      "labels": ["DevDependency"],
+      "labels": ["DevDependency 🔼"],
       "prPriority": 3,
       "commitMessageAction": "⬆️ upgrade"
     },
@@ -42,7 +42,7 @@
       "groupName": "devDependencies (major)",
       "matchDepTypes": ["devDependencies"],
       "matchUpdateTypes": ["major"],
-      "labels": ["Dependency"],
+      "labels": ["Dependency ⏫"],
       "prPriority": 3,
       "commitMessageAction": "⬆️ upgrade",
       "semanticCommitScope": "dev-deps"
@@ -59,7 +59,7 @@
         "rollback",
         "bump"
       ],
-      "labels": ["Dependency"],
+      "labels": ["Dependency ⏫"],
       "prPriority": 2
     },
     {
@@ -74,16 +74,16 @@
         "rollback",
         "bump"
       ],
-      "labels": ["DevDependency"],
+      "labels": ["DevDependency 🔼"],
       "semanticCommitScope": "dev-deps",
       "prPriority": 2
     },
     {
       "matchDatasources": ["npm"],
       "groupName": "renovate-meta",
-      "labels": ["OtherDependencies"],
+      "labels": ["OtherDependencies ⬆️"],
       "semanticCommitScope": "other-deps",
-      "prPriority": 1
+      "prPriority": -1
     }
   ]
 }
