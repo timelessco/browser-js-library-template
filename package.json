@@ -57,14 +57,14 @@
   },
   "dependencies": {
     "gacp": "^3.0.0",
-    "vite": "^3.2.5"
+    "vite": "^4.0.0"
   },
   "devDependencies": {
     "@commitlint/cli": "^17.3.0",
     "@commitlint/config-conventional": "^17.3.0",
     "@ianvs/prettier-plugin-sort-imports": "^3.7.1",
     "@release-it/conventional-changelog": "^5.1.1",
-    "eslint": "^8.0.0",
+    "eslint": "^8.29.0",
     "eslint-config-airbnb-base": "^15.0.0",
     "eslint-config-prettier": "^8.5.0",
     "eslint-plugin-import": "^2.26.0",
