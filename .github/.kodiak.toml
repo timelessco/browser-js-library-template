@@ -107,7 +107,7 @@ require_automerge_label = true # default: true
 
 # Pull requests with the update.autoupdate_label will be updated when they are out-of-date with their base branch.
 # This configuration option is similar to update.always, but only pull requests with the configured label are affected
-autoupdate_label = ['autoupdate 🔁'] # default: "null"
+autoupdate_label = 'autoupdate 🔁' # default: "null"
 
 # if using `update.always`, add dependabot to `update.ignore_usernames` to allow
 # dependabot to update and close stale dependency upgrades.
@@ -127,4 +127,4 @@ auto_approve_usernames = ["renovate[bot]"]
 
 # If a PR has a label assigned which is in the `approve.auto_approve_labels` list,
 # Kodiak will automatically add an approval to the PR.
-auto_approve_labels = "autoapprove" # default: []
+auto_approve_labels = ["autoapprove"] # default: []
