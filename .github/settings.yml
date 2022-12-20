@@ -69,7 +69,7 @@ labels:
     description: "Changelog Changed"
     color: "fbca04"
 
-  - name: "Dependency update"
+  - name: "Dependency"
     description: "Pull requests that update a dependency file"
     color: "e1f788"
 
@@ -128,7 +128,7 @@ labels:
   - name: "Type: Wontfix"
     color: "000000"
 
-  - name: "semantic-release"
+  - name: "automerge 🚀"
     color: "ff0000"
 
 # Collaborators: give specific users access to this repository.
