@@ -9,8 +9,8 @@
   "prCreation": "immediate",
   "timezone": "Asia/Kolkata",
   "rangeStrategy": "bump",
-  "prHourlyLimit": 10,
-  "prConcurrentLimit": 10,
+  "prHourlyLimit": 20,
+  "prConcurrentLimit": 20,
   "separateMultipleMajor": true,
   "separateMinorPatch": true,
   "rebaseStalePrs": true,
@@ -35,7 +35,7 @@
       "matchDepTypes": ["dependencies"],
       "matchUpdateTypes": ["major"],
       "labels": ["DevDependency"],
-      "prPriority": 1,
+      "prPriority": 3,
       "commitMessageAction": "⬆️ upgrade"
     },
     {
@@ -43,7 +43,7 @@
       "matchDepTypes": ["devDependencies"],
       "matchUpdateTypes": ["major"],
       "labels": ["Dependency"],
-      "prPriority": 1,
+      "prPriority": 3,
       "commitMessageAction": "⬆️ upgrade",
       "semanticCommitScope": "dev-deps"
     },
@@ -83,7 +83,7 @@
       "groupName": "renovate-meta",
       "labels": ["OtherDependencies"],
       "semanticCommitScope": "other-deps",
-      "prPriority": 3
+      "prPriority": 1
     }
   ]
 }
