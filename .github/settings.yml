@@ -61,8 +61,8 @@ repository:
 # https://docs.github.com/en/rest/reference/issues#update-a-label
 
 labels:
-  - name: "Added"
-    description: "Changelog Added"
+  - name: "Feature"
+    description: "Added Feature"
     color: "90db3f"
 
   - name: "OtherDependencies"
@@ -78,7 +78,7 @@ labels:
     color: "fd73c3"
 
   - name: "Deprecated"
-    description: "Changelog Deprecated"
+    description: "Deprecated"
     color: "1d76db"
 
   - name: "Duplicate"
@@ -89,14 +89,6 @@ labels:
 
   - name: "Stale"
     color: "000000"
-
-  - name: "Fixed"
-    description: "Changelog Fixed"
-    color: "9ef42e"
-
-  - name: "Removed"
-    description: "Changelog Removed"
-    color: "e99695"
 
   - name: "Security"
     description: "Changelog Security"
@@ -113,9 +105,6 @@ labels:
 
   - name: "Status: Waiting for feedback"
     color: "fef2c0"
-
-  - name: "Type: BC Break"
-    color: "b60205"
 
   - name: "Type: Bug"
     color: "b60205"
