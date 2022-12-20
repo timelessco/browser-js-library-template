@@ -7,14 +7,13 @@
   "dependencyDashboardTitle": "Renovate Dependency Updates",
   "prCreation": "immediate",
   "timezone": "Asia/Kolkata",
+  "rangeStrategy": "bump",
   "stabilityDays": 10,
+  "prHourlyLimit": 10,
+  "prConcurrentLimit": 10,
   "separateMultipleMajor": true,
   "separateMinorPatch": true,
-  "ignoreUnstable": true,
   "rebaseStalePrs": true,
-  "prHourlyLimit": 1,
-  "prConcurrentLimit": 20,
-  "composer": { "enabled": true },
   "vulnerabilityAlerts": {
     "enabled": true,
     "labels": ["Security", "Type: Critical"]
@@ -31,6 +30,11 @@
     "platformAutomerge": true
   },
   "packageRules": [
+    {
+      "matchDatasources": ["npm"],
+      "groupName": "renovate-meta",
+      "labels": ["OtherDependencies", "automerge 🚀"]
+    },
     {
       "groupName": "dependencies (non-major)",
       "matchDepTypes": ["dependencies"],
@@ -77,12 +81,6 @@
       "matchPackagePatterns": ["^@types/"],
       "groupName": "definitelyTyped",
       "labels": ["DevDependency"]
-    },
-    {
-      "matchDatasources": ["npm"],
-      "groupName": "renovate-meta",
-      "labels": ["OtherDependencies", "automerge 🚀"],
-      "semanticCommits": "enabled"
     }
   ]
 }
