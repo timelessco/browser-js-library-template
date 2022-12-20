@@ -61,23 +61,29 @@ repository:
 # https://docs.github.com/en/rest/reference/issues#update-a-label
 
 labels:
+  - name: "autoapprove ✅"
+    color: "ff0000"
+
+  - name: "autoupdate 🔁"
+    color: "#bfdadc"
+
   - name: "Feature"
     description: "Added Feature"
     color: "90db3f"
 
-  - name: "OtherDependencies"
-    description: "OtherDependencies Changed"
-    color: "fbca04"
-
-  - name: "Dependency"
+  - name: "Dependency 🔼"
     description: "Pull requests that update a dependency file"
     color: "e1f788"
 
-  - name: "DevDependency"
+  - name: "OtherDependencies ⬆️"
+    description: "OtherDependencies Changed"
+    color: "fbca04"
+
+  - name: "DevDependency ⬆️"
     description: "Pull requests that update a dev dependency file"
     color: "fd73c3"
 
-  - name: "Deprecated"
+  - name: "Deprecated 🛑"
     description: "Deprecated"
     color: "1d76db"
 
@@ -121,14 +127,11 @@ labels:
   - name: "Type: Wontfix"
     color: "000000"
 
-  - name: "autoapprove"
-    color: "ff0000"
-
 # Collaborators: give specific users access to this repository.
 # See https://docs.github.com/en/rest/reference/repos#add-a-repository-collaborator for available options
 collaborators:
-  # - username: navin-moorthy
-  #   permission: admin
+  - username: navin-moorthy
+    permission: admin
   # - username: hubot
   #   permission: pull
 
@@ -166,10 +169,16 @@ branches:
             { "context": "Build" },
           ]
       # Required. Enforce all configured restrictions for administrators. Set to true to enforce required status checks for repository administrators. Set to null to disable.
-      enforce_admins: false
+      enforce_admins: true
       # Prevent merge commits from being pushed to matching branches
       required_linear_history: true
       # Required. Restrict who can push to this branch. Team and user restrictions are only available for organization-owned repositories. Set to null to disable.
       restrictions:
         users: []
         teams: []
+        apps: ["renovate", "kodiakhq"]
+
+      # Ensure all review conversations are seen and addressed prior to merging
+      required_conversation_resolution: true
+      # Permits force pushes for all users with push access. Set to null to disable.
+      allow_force_pushes: true

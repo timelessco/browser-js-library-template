@@ -12,16 +12,16 @@ version = 1
 [merge]
 # Label to enable Kodiak to merge a PR.
 
-# By default, Kodiak will only act on PRs that have this label. You can disable
-# this requirement via `merge.require_automerge_label`.
-automerge_label = ['automerge 🚀'] # default: "automerge"
-
 # Require that the automerge label (`merge.automerge_label`) be set for Kodiak
 # to merge a PR.
 #
 # When disabled, Kodiak will immediately attempt to merge any PR that passes all
 # GitHub branch protection requirements.
 require_automerge_label = false
+
+# By default, Kodiak will only act on PRs that have this label. You can disable
+# this requirement via `merge.require_automerge_label`.
+automerge_label = ['automerge 🚀'] # default: "automerge"
 
 # Choose merge method for Kodiak to use.
 #
@@ -111,20 +111,20 @@ autoupdate_label = 'autoupdate 🔁' # default: "null"
 
 # if using `update.always`, add dependabot to `update.ignore_usernames` to allow
 # dependabot to update and close stale dependency upgrades.
-ignored_usernames = ["renovate[bot]"]
+ignored_usernames = ["renovate"]
 
 [merge.automerge_dependencies]
 # auto merge all PRs opened by "dependabot" that are "minor" or "patch" version upgrades. "major" version upgrades will be ignored.
 versions = ["minor", "patch"]
-usernames = ["renovate[bot]"]
+usernames = ["renovate"]
 
 
 [approve]
 
 # If a PR is opened by a user with a username in the `approve.auto_approve_usernames` list,
 # Kodiak will automatically add an approval to the PR.
-auto_approve_usernames = ["renovate[bot]"]
+auto_approve_usernames = ["renovate"]
 
 # If a PR has a label assigned which is in the `approve.auto_approve_labels` list,
 # Kodiak will automatically add an approval to the PR.
-auto_approve_labels = ["autoapprove"] # default: []
+auto_approve_labels = ["autoapprove ✅"] # default: []
