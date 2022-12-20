@@ -35,7 +35,7 @@
       "updateTypes": ["major"],
       "labels": ["Dependency", "Changed"],
       "semanticCommitType": "fix",
-      "semanticCommitType": "deps",
+      "semanticCommitScope": "deps",
       "semanticCommits": "enabled"
     },
     {
