@@ -71,7 +71,7 @@ labels:
     description: "Added Feature"
     color: "90db3f"
 
-  - name: "Dependency 🔼"
+  - name: "Dependency ⏫"
     description: "Pull requests that update a dependency file"
     color: "e1f788"
 
@@ -79,7 +79,7 @@ labels:
     description: "OtherDependencies Changed"
     color: "fbca04"
 
-  - name: "DevDependency ⬆️"
+  - name: "DevDependency 🔼"
     description: "Pull requests that update a dev dependency file"
     color: "fd73c3"
 
