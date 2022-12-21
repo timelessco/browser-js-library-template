@@ -4,7 +4,7 @@ repository:
   # https://docs.github.com/en/rest/reference/repos#update-a-repository
 
   # The name of the repository. Changing this will rename the repository
-  name: "js-library-template"
+  name: "browser-js-library-template"
 
   # Either `true` to make this repo available as a template repository or false to prevent it.
   is_template: true,

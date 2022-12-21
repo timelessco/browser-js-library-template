@@ -1,29 +1,29 @@
 {
-  "name": "vanilla-js-library-template",
-  "version": "0.0.1",
+  "name": "browser-js-library-template",
+  "version": "1.0.0",
   "type": "module",
   "description": "Template for production ready vanilla js library",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/timelessco/vanilla-js-library-template.git"
+    "url": "git+https://github.com/timelessco/browser-js-library-template.git"
   },
-  "homepage": "https://github.com/timelessco/vanilla-js-library-template#readme",
+  "homepage": "https://github.com/timelessco/browser-js-library-template#readme",
   "bugs": {
-    "url": "https://github.com/timelessco/vanilla-js-library-template/issues"
+    "url": "https://github.com/timelessco/browser-js-library-template/issues"
   },
   "author": "Timeless <hello@timeless.co> (https://timeless.co/)",
   "license": "MIT",
   "private": true,
-  "main": "./lib/vanilla-js-library-template.umd.js",
-  "module": "./lib/vanilla-js-library-template.es.js",
+  "main": "./lib/browser-js-library-template.umd.js",
+  "module": "./lib/browser-js-library-template.es.js",
   "exports": {
     ".": {
-      "import": "./lib/vanilla-js-library-template.es.js",
-      "require": "./lib/vanilla-js-library-template.umd.js"
+      "import": "./lib/browser-js-library-template.es.js",
+      "require": "./lib/browser-js-library-template.umd.js"
     }
   },
-  "browser": "./lib/vanilla-js-library-template.umd.js",
-  "unpkg": "./lib/vanilla-js-library-template.umd.js",
+  "browser": "./lib/browser-js-library-template.umd.js",
+  "unpkg": "./lib/browser-js-library-template.umd.js",
   "files": [
     "lib"
   ],

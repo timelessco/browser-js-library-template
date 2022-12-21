@@ -12,7 +12,7 @@ To get started with this project, follow these steps:
 1. Clone the repository:
 
 ```
-git clone https://github.com/timelessco/vanilla-js-library-template
+git clone https://github.com/timelessco/browser-js-library-template
 ```
 
 2. Install the dependencies:
