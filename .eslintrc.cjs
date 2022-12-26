@@ -1,17 +1,31 @@
-module.exports = {
+/** @type {import('eslint').Linter.Config} */
+const config = {
+  env: {
+    browser: true,
+  },
+  parser: "@babel/eslint-parser",
+  parserOptions: {
+    requireConfigFile: false,
+    babelOptions: {
+      babelrc: false,
+      configFile: false,
+      presets: ["@babel/preset-env"],
+    },
+  },
   extends: ["airbnb-base", "plugin:prettier/recommended"],
   plugins: ["import"],
   rules: {
     "no-console": "off",
-    "import/first": "error",
-    "import/newline-after-import": "error",
-    "import/export": "error",
-    "import/no-deprecated": "warn",
-    "import/no-duplicates": "error",
-    "import/no-amd": "error",
-    "import/no-anonymous-default-export": "warn",
-    "import/no-webpack-loader-syntax": "error",
-    "import/no-extraneous-dependencies": "off",
+    "import/no-extraneous-dependencies": [
+      "error",
+      { devDependencies: ["**/*.config.js"] },
+    ],
     "import/prefer-default-export": "off",
+    "no-unused-vars": [
+      "error",
+      { argsIgnorePattern: "^_", varsIgnorePattern: "^_" },
+    ],
   },
 };
+
+module.exports = config;
