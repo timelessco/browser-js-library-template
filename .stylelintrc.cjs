@@ -1,5 +1,6 @@
 module.exports = {
-  extends: ["stylelint-config-prettier", "stylelint-config-standard"],
+  // add
+  extends: ["stylelint-config-standard", "stylelint-config-prettier"],
   rules: {
     // Suppress the following rules as they are already handled by Prettier
     "value-list-comma-newline-after": null,

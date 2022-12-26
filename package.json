@@ -5,11 +5,11 @@
   "description": "Template for production ready vanilla js library",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/timelessco/browser-js-library-template.git"
+    "url": "git+https://github.com/SamrithaS/js-bottomsheet.git"
   },
-  "homepage": "https://github.com/timelessco/browser-js-library-template#readme",
+  "homepage": "https://github.com/SamrithaS/js-bottomsheet#readme",
   "bugs": {
-    "url": "https://github.com/timelessco/browser-js-library-template/issues"
+    "url": "https://github.com/SamrithaS/js-bottomsheet/issues"
   },
   "author": "Timeless <hello@timeless.co> (https://timeless.co/)",
   "license": "MIT",
