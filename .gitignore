@@ -63,7 +63,7 @@ jspm_packages
 storybook-static
 
 
-## library folder
+# local files
 lib
 dist
 

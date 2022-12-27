@@ -67,7 +67,7 @@ package-lock.json
 yarn.lock
 pnpm-lock.yaml
 
-# Library files
+# local files
 dist
 CHANGELOG.md
 lib

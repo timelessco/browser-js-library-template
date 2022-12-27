@@ -27,7 +27,7 @@ pnpm install
 pnpm run dev
 ```
 
-This will start a development server at `http://localhost:5174`, and you can
+This will start a development server at `http://localhost:5173`, and you can
 view the application in your browser. Any changes you make to the code will be
 automatically reloaded in the browser.
 
