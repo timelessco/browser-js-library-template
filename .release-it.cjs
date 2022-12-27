@@ -14,6 +14,9 @@ module.exports = {
     release: true,
     releaseName: "Release v${version}",
   },
+  npm: {
+    publish: false,
+  },
   plugins: {
     "@release-it/conventional-changelog": {
       ignoreRecommendedBump: true,
