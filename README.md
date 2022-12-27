@@ -18,16 +18,16 @@ git clone https://github.com/timelessco/browser-js-library-template
 2. Install the dependencies:
 
 ```
-npm install
+pnpm install
 ```
 
 3. Start the development server:
 
 ```
-npm run dev
+pnpm run dev
 ```
 
-This will start a development server at `http://localhost:3000`, and you can
+This will start a development server at `http://localhost:5174`, and you can
 view the application in your browser. Any changes you make to the code will be
 automatically reloaded in the browser.
 
@@ -36,7 +36,7 @@ automatically reloaded in the browser.
 To build the project for production, run the following command:
 
 ```
-npm run build:website
+pnpm run build:website
 ```
 
 This will generate a production-ready build in the `dist` folder.
@@ -46,7 +46,7 @@ This will generate a production-ready build in the `dist` folder.
 To build the project for production, run the following command:
 
 ```
-npm run build
+pnpm run build
 ```
 
 This will generate a production-ready build library in the `lib` folder.
