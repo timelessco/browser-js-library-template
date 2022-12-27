@@ -31,21 +31,11 @@
   },
   "packageRules": [
     {
-      "groupName": "dependencies (major)",
-      "matchDepTypes": ["dependencies"],
-      "matchUpdateTypes": ["major"],
-      "labels": ["DevDependency 🔼"],
-      "prPriority": 3,
-      "commitMessageAction": "⬆️ upgrade"
-    },
-    {
-      "groupName": "devDependencies (major)",
-      "matchDepTypes": ["devDependencies"],
-      "matchUpdateTypes": ["major"],
-      "labels": ["Dependency ⏫"],
-      "prPriority": 3,
-      "commitMessageAction": "⬆️ upgrade",
-      "semanticCommitScope": "dev-deps"
+      "matchDatasources": ["npm"],
+      "groupName": "renovate-meta",
+      "labels": ["OtherDependencies ⬆️"],
+      "semanticCommitScope": "other-deps",
+      "prPriority": -1
     },
     {
       "groupName": "dependencies (non-major)",
@@ -79,11 +69,21 @@
       "prPriority": 2
     },
     {
-      "matchDatasources": ["npm"],
-      "groupName": "renovate-meta",
-      "labels": ["OtherDependencies ⬆️"],
-      "semanticCommitScope": "other-deps",
-      "prPriority": -1
+      "groupName": "dependencies (major)",
+      "matchDepTypes": ["dependencies"],
+      "matchUpdateTypes": ["major"],
+      "labels": ["DevDependency 🔼"],
+      "prPriority": 3,
+      "commitMessageAction": "⬆️ upgrade"
+    },
+    {
+      "groupName": "devDependencies (major)",
+      "matchDepTypes": ["devDependencies"],
+      "matchUpdateTypes": ["major"],
+      "labels": ["Dependency ⏫"],
+      "prPriority": 3,
+      "commitMessageAction": "⬆️ upgrade",
+      "semanticCommitScope": "dev-deps"
     }
   ]
 }
