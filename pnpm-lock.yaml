@@ -24,7 +24,7 @@ specifiers:
   stylelint: ^14.16.1
   stylelint-config-prettier: ^9.0.4
   stylelint-config-standard: ^29.0.0
-  vite: ^4.0.4
+  vite: ^4.1.1
   vite-plugin-top-level-await: ^1.2.3
 
 devDependencies:
@@ -51,8 +51,8 @@ devDependencies:
   stylelint: 14.16.1
   stylelint-config-prettier: 9.0.4_stylelint@14.16.1
   stylelint-config-standard: 29.0.0_stylelint@14.16.1
-  vite: 4.0.4_@types+node@18.11.18
-  vite-plugin-top-level-await: 1.2.3_vite@4.0.4
+  vite: 4.1.1_@types+node@18.11.18
+  vite-plugin-top-level-await: 1.2.3_vite@4.1.1
 
 packages:
 
@@ -6920,18 +6920,18 @@ packages:
       spdx-expression-parse: 3.0.1
     dev: true
 
-  /vite-plugin-top-level-await/1.2.3_vite@4.0.4:
+  /vite-plugin-top-level-await/1.2.3_vite@4.1.1:
     resolution: {integrity: sha512-Hc4W7R+Hw4413lzv+kuVdXLrgNU+Pb07853Q15n/4JytEtyLykpN2rmtlG7J5uWij2btDXEEiv+DcrCiRZo/zA==}
     peerDependencies:
       vite: '>=2.8'
     dependencies:
       '@swc/core': 1.3.30
       uuid: 9.0.0
-      vite: 4.0.4_@types+node@18.11.18
+      vite: 4.1.1_@types+node@18.11.18
     dev: true
 
-  /vite/4.0.4_@types+node@18.11.18:
-    resolution: {integrity: sha512-xevPU7M8FU0i/80DMR+YhgrzR5KS2ORy1B4xcX/cXLsvnUWvfHuqMmVU6N0YiJ4JWGRJJsLCgjEzKjG9/GKoSw==}
+  /vite/4.1.1_@types+node@18.11.18:
+    resolution: {integrity: sha512-LM9WWea8vsxhr782r9ntg+bhSFS06FJgCvvB0+8hf8UWtvaiDagKYWXndjfX6kGl74keHJUcpzrQliDXZlF5yg==}
     engines: {node: ^14.18.0 || >=16.0.0}
     hasBin: true
     peerDependencies:
