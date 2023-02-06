@@ -25,7 +25,7 @@ specifiers:
   stylelint-config-prettier: ^9.0.4
   stylelint-config-standard: ^29.0.0
   vite: ^4.1.1
-  vite-plugin-top-level-await: ^1.2.3
+  vite-plugin-top-level-await: ^1.2.4
 
 devDependencies:
   '@babel/core': 7.20.12
@@ -52,7 +52,7 @@ devDependencies:
   stylelint-config-prettier: 9.0.4_stylelint@14.16.1
   stylelint-config-standard: 29.0.0_stylelint@14.16.1
   vite: 4.1.1_@types+node@18.11.19
-  vite-plugin-top-level-await: 1.2.3_vite@4.1.1
+  vite-plugin-top-level-await: 1.2.4_vite@4.1.1
 
 packages:
 
@@ -6920,8 +6920,8 @@ packages:
       spdx-expression-parse: 3.0.1
     dev: true
 
-  /vite-plugin-top-level-await/1.2.3_vite@4.1.1:
-    resolution: {integrity: sha512-Hc4W7R+Hw4413lzv+kuVdXLrgNU+Pb07853Q15n/4JytEtyLykpN2rmtlG7J5uWij2btDXEEiv+DcrCiRZo/zA==}
+  /vite-plugin-top-level-await/1.2.4_vite@4.1.1:
+    resolution: {integrity: sha512-ABHJipy/R31F/3bWnPBYIFUKVXr+Ox6EVax5jos67QhuzZ4aQyp/F3qZhF2Qi/9pgi9vpIftTZ++wfkRn0c4gA==}
     peerDependencies:
       vite: '>=2.8'
     dependencies:
