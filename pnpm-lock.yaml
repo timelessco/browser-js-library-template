@@ -6,7 +6,7 @@ specifiers:
   '@babel/preset-env': ^7.20.2
   '@commitlint/cli': ^17.5.0
   '@commitlint/config-conventional': ^17.4.4
-  '@ianvs/prettier-plugin-sort-imports': ^3.7.1
+  '@ianvs/prettier-plugin-sort-imports': ^3.7.2
   '@release-it/conventional-changelog': ^5.1.1
   browserslist-to-esbuild: ^1.2.0
   eslint: ^8.36.0
@@ -18,9 +18,9 @@ specifiers:
   husky: ^8.0.3
   lint-staged: ^13.2.0
   pinst: ^3.0.0
-  prettier: ^2.8.6
+  prettier: ^2.8.7
   prettier-plugin-pkg: ^0.17.1
-  release-it: ^15.9.1
+  release-it: ^15.9.3
   stylelint: ^15.3.0
   stylelint-config-prettier: ^9.0.5
   stylelint-config-standard: ^31.0.0
@@ -33,21 +33,21 @@ devDependencies:
   '@babel/preset-env': 7.20.2_@babel+core@7.21.3
   '@commitlint/cli': 17.5.0
   '@commitlint/config-conventional': 17.4.4
-  '@ianvs/prettier-plugin-sort-imports': 3.7.1_prettier@2.8.6
-  '@release-it/conventional-changelog': 5.1.1_release-it@15.9.1
+  '@ianvs/prettier-plugin-sort-imports': 3.7.2_prettier@2.8.7
+  '@release-it/conventional-changelog': 5.1.1_release-it@15.9.3
   browserslist-to-esbuild: 1.2.0
   eslint: 8.36.0
   eslint-config-airbnb-base: 15.0.0_eakrjjutlgqjxe5ydhtnd4qdmy
   eslint-config-prettier: 8.8.0_eslint@8.36.0
   eslint-plugin-import: 2.27.5_eslint@8.36.0
-  eslint-plugin-prettier: 4.2.1_ose2zoovovx4ulolhifz3tfzx4
+  eslint-plugin-prettier: 4.2.1_ywlv3zveqg2kxfq44lflihh5mm
   gacp: 3.0.3
   husky: 8.0.3
   lint-staged: 13.2.0
   pinst: 3.0.0
-  prettier: 2.8.6
-  prettier-plugin-pkg: 0.17.1_prettier@2.8.6
-  release-it: 15.9.1
+  prettier: 2.8.7
+  prettier-plugin-pkg: 0.17.1_prettier@2.8.7
+  release-it: 15.9.3
   stylelint: 15.3.0
   stylelint-config-prettier: 9.0.5_stylelint@15.3.0
   stylelint-config-standard: 31.0.0_stylelint@15.3.0
@@ -1730,8 +1730,8 @@ packages:
     engines: {node: '>=6.9.0'}
     dev: true
 
-  /@ianvs/prettier-plugin-sort-imports/3.7.1_prettier@2.8.6:
-    resolution: {integrity: sha512-XDnBUUruJY9KgNd7T2ZHnVPWo5B9NzVDCLEMm7HjXTA3rTtMg5Q46gYRjLvampDXSmN8+icu54aRE3IIT8U+1w==}
+  /@ianvs/prettier-plugin-sort-imports/3.7.2_prettier@2.8.7:
+    resolution: {integrity: sha512-bVckKToJM8XV2wTOG1VpeXrSmfAG49esVrikbxeFbY51RJdNke9AdMANJtGuACB59uo+pGlz0wBdWFrRzWyO1A==}
     peerDependencies:
       '@vue/compiler-sfc': '>=3.0.0'
       prettier: 2.x
@@ -1747,7 +1747,7 @@ packages:
       javascript-natural-sort: 0.7.1
       lodash.clone: 4.5.0
       lodash.isequal: 4.5.0
-      prettier: 2.8.6
+      prettier: 2.8.7
     transitivePeerDependencies:
       - supports-color
     dev: true
@@ -1965,7 +1965,7 @@ packages:
       config-chain: 1.1.13
     dev: true
 
-  /@release-it/conventional-changelog/5.1.1_release-it@15.9.1:
+  /@release-it/conventional-changelog/5.1.1_release-it@15.9.3:
     resolution: {integrity: sha512-QtbDBe36dQfzexAfDYrbLPvd5Cb5bMWmLcjcGhCOWBss7fe1/gCjoxDULVz+7N7G5Nu2UMeBwHcUp/w8RDh5VQ==}
     engines: {node: '>=14'}
     peerDependencies:
@@ -1974,7 +1974,7 @@ packages:
       concat-stream: 2.0.0
       conventional-changelog: 3.1.25
       conventional-recommended-bump: 6.1.0
-      release-it: 15.9.1
+      release-it: 15.9.3
       semver: 7.3.8
     dev: true
 
@@ -3565,7 +3565,7 @@ packages:
       - supports-color
     dev: true
 
-  /eslint-plugin-prettier/4.2.1_ose2zoovovx4ulolhifz3tfzx4:
+  /eslint-plugin-prettier/4.2.1_ywlv3zveqg2kxfq44lflihh5mm:
     resolution: {integrity: sha512-f/0rXLXUt0oFYs8ra4w49wYZBG5GKZpAYsJSm6rnYL5uVDjd+zowwMwVZHnAjf4edNrKpCDYfXDgmRE/Ak7QyQ==}
     engines: {node: '>=12.0.0'}
     peerDependencies:
@@ -3578,7 +3578,7 @@ packages:
     dependencies:
       eslint: 8.36.0
       eslint-config-prettier: 8.8.0_eslint@8.36.0
-      prettier: 2.8.6
+      prettier: 2.8.7
       prettier-linter-helpers: 1.0.0
     dev: true
 
@@ -4468,7 +4468,7 @@ packages:
       figures: 5.0.0
       lodash: 4.17.21
       mute-stream: 1.0.0
-      ora: 6.2.0
+      ora: 6.3.0
       run-async: 2.4.1
       rxjs: 7.8.0
       string-width: 5.1.2
@@ -5532,8 +5532,8 @@ packages:
       word-wrap: 1.2.3
     dev: true
 
-  /ora/6.2.0:
-    resolution: {integrity: sha512-c1qb/1rdE+EFDYiLXh10VY459uMh7DN9zlgd8mZJLoeiPpYllN8eAOiih2Rkah5ywxRm5tHN5C9zPheDq8d1MA==}
+  /ora/6.3.0:
+    resolution: {integrity: sha512-1/D8uRFY0ay2kgBpmAwmSA404w4OoPVhHMqRqtjvrcK/dnzcEZxMJ+V4DUbyICu8IIVRclHcOf5wlD1tMY4GUQ==}
     engines: {node: ^12.20.0 || ^14.13.1 || >=16.0.0}
     dependencies:
       chalk: 5.2.0
@@ -5849,17 +5849,17 @@ packages:
       fast-diff: 1.2.0
     dev: true
 
-  /prettier-plugin-pkg/0.17.1_prettier@2.8.6:
+  /prettier-plugin-pkg/0.17.1_prettier@2.8.7:
     resolution: {integrity: sha512-XPRRMQR5oseJXdfK8kQDj2LCV1UjmTuDlPbbJ8C2WLaATNhdvZLhQO0+NtWnRrQTP+erLR5cVxfcwyqF+3R8SA==}
     engines: {node: ^12.20.0 || ^14.18.0 || >=16.0.0}
     peerDependencies:
       prettier: ^2.0.0
     dependencies:
-      prettier: 2.8.6
+      prettier: 2.8.7
     dev: true
 
-  /prettier/2.8.6:
-    resolution: {integrity: sha512-mtuzdiBbHwPEgl7NxWlqOkithPyp4VN93V7VeHVWBF+ad3I5avc0RVDT4oImXQy9H/AqxA2NSQH8pSxHW6FYbQ==}
+  /prettier/2.8.7:
+    resolution: {integrity: sha512-yPngTo3aXUUmyuTjeTUT75txrf+aMh9FiD7q9ZE/i6r0bPb22g4FsE6Y338PQX1bmfy08i9QQCB7/rcUAVntfw==}
     engines: {node: '>=10.13.0'}
     hasBin: true
     dev: true
@@ -6143,8 +6143,8 @@ packages:
       jsesc: 0.5.0
     dev: true
 
-  /release-it/15.9.1:
-    resolution: {integrity: sha512-qTAjTkaBZDRJM0j/je2MzNASuwhBXFn0GTqHB7MfLEe9rIdVk+xEwUphbhNemp+wuC7PuZucBulUbH2m3EokHg==}
+  /release-it/15.9.3:
+    resolution: {integrity: sha512-yFZTGJ9lH075zEAiVB4w58GgQ+bFR4by+eNClN3sdLtTLwbEm9VXrISt+8vO1fHDH83557Fns5ub1FuhAY/a3A==}
     engines: {node: '>=14.9'}
     hasBin: true
     dependencies:
@@ -6164,7 +6164,7 @@ packages:
       new-github-release-url: 2.0.0
       node-fetch: 3.3.1
       open: 9.0.0
-      ora: 6.2.0
+      ora: 6.3.0
       os-name: 5.1.0
       promise.allsettled: 1.0.6
       proxy-agent: 5.0.0
