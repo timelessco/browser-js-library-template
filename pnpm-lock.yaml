@@ -21,7 +21,7 @@ devDependencies:
     version: 3.7.2(prettier@2.8.7)
   '@release-it/conventional-changelog':
     specifier: ^5.1.1
-    version: 5.1.1(release-it@15.10.0)
+    version: 5.1.1(release-it@15.10.1)
   browserslist-to-esbuild:
     specifier: ^1.2.0
     version: 1.2.0
@@ -59,8 +59,8 @@ devDependencies:
     specifier: ^0.17.1
     version: 0.17.1(prettier@2.8.7)
   release-it:
-    specifier: ^15.10.0
-    version: 15.10.0
+    specifier: ^15.10.1
+    version: 15.10.1
   stylelint:
     specifier: ^15.4.0
     version: 15.4.0
@@ -1986,7 +1986,7 @@ packages:
       config-chain: 1.1.13
     dev: true
 
-  /@release-it/conventional-changelog@5.1.1(release-it@15.10.0):
+  /@release-it/conventional-changelog@5.1.1(release-it@15.10.1):
     resolution: {integrity: sha512-QtbDBe36dQfzexAfDYrbLPvd5Cb5bMWmLcjcGhCOWBss7fe1/gCjoxDULVz+7N7G5Nu2UMeBwHcUp/w8RDh5VQ==}
     engines: {node: '>=14'}
     peerDependencies:
@@ -1995,7 +1995,7 @@ packages:
       concat-stream: 2.0.0
       conventional-changelog: 3.1.25
       conventional-recommended-bump: 6.1.0
-      release-it: 15.10.0
+      release-it: 15.10.1
       semver: 7.3.8
     dev: true
 
@@ -6144,8 +6144,8 @@ packages:
       jsesc: 0.5.0
     dev: true
 
-  /release-it@15.10.0:
-    resolution: {integrity: sha512-cXY7cZyXjZ/e8TPUjzM7AHvnOKzNmj2NwNT3gREmZIdnDRmuX3DSnS3S3SLbVF8S3SmM88WfHVifGxFaFjNthQ==}
+  /release-it@15.10.1:
+    resolution: {integrity: sha512-Wkk4aFHSo27vQwHIlcEy77lJwnQlh4UDQckc53gh5tKo7F22mAUEAe8SYQZJcFh7icdkf0OV70onhB1dDmeClA==}
     engines: {node: '>=14.9'}
     hasBin: true
     dependencies:
