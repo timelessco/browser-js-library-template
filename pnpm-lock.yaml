@@ -66,14 +66,14 @@ devDependencies:
     specifier: ^15.10.5
     version: 15.10.5
   stylelint:
-    specifier: ^15.6.2
-    version: 15.6.2
+    specifier: ^15.6.3
+    version: 15.6.3
   stylelint-config-prettier:
     specifier: ^9.0.5
-    version: 9.0.5(stylelint@15.6.2)
+    version: 9.0.5(stylelint@15.6.3)
   stylelint-config-standard:
     specifier: ^33.0.0
-    version: 33.0.0(stylelint@15.6.2)
+    version: 33.0.0(stylelint@15.6.3)
   vite:
     specifier: ^4.3.9
     version: 4.3.9(@types/node@20.2.5)
@@ -6694,35 +6694,35 @@ packages:
     resolution: {integrity: sha512-Dj1Okke1C3uKKwQcetra4jSuk0DqbzbYtXipzFlFMZtowbF1x7BKJwB9AayVMyFARvU8EDrZdcax4At/452cAg==}
     dev: true
 
-  /stylelint-config-prettier@9.0.5(stylelint@15.6.2):
+  /stylelint-config-prettier@9.0.5(stylelint@15.6.3):
     resolution: {integrity: sha512-U44lELgLZhbAD/xy/vncZ2Pq8sh2TnpiPvo38Ifg9+zeioR+LAkHu0i6YORIOxFafZoVg0xqQwex6e6F25S5XA==}
     engines: {node: '>= 12'}
     hasBin: true
     peerDependencies:
       stylelint: '>= 11.x < 15'
     dependencies:
-      stylelint: 15.6.2
+      stylelint: 15.6.3
     dev: true
 
-  /stylelint-config-recommended@12.0.0(stylelint@15.6.2):
+  /stylelint-config-recommended@12.0.0(stylelint@15.6.3):
     resolution: {integrity: sha512-x6x8QNARrGO2sG6iURkzqL+Dp+4bJorPMMRNPScdvaUK8PsynriOcMW7AFDKqkWAS5wbue/u8fUT/4ynzcmqdQ==}
     peerDependencies:
       stylelint: ^15.5.0
     dependencies:
-      stylelint: 15.6.2
+      stylelint: 15.6.3
     dev: true
 
-  /stylelint-config-standard@33.0.0(stylelint@15.6.2):
+  /stylelint-config-standard@33.0.0(stylelint@15.6.3):
     resolution: {integrity: sha512-eyxnLWoXImUn77+ODIuW9qXBDNM+ALN68L3wT1lN2oNspZ7D9NVGlNHb2QCUn4xDug6VZLsh0tF8NyoYzkgTzg==}
     peerDependencies:
       stylelint: ^15.5.0
     dependencies:
-      stylelint: 15.6.2
-      stylelint-config-recommended: 12.0.0(stylelint@15.6.2)
+      stylelint: 15.6.3
+      stylelint-config-recommended: 12.0.0(stylelint@15.6.3)
     dev: true
 
-  /stylelint@15.6.2:
-    resolution: {integrity: sha512-fjQWwcdUye4DU+0oIxNGwawIPC5DvG5kdObY5Sg4rc87untze3gC/5g/ikePqVjrAsBUZjwMN+pZsAYbDO6ArQ==}
+  /stylelint@15.6.3:
+    resolution: {integrity: sha512-qWUfFsnPyrgK8NMFvGkjUrF1+DNrS5VMoN39meJbeQcOW8NE3pxIwTpA35m0MG6lmZobs7GVoQUdELmzqdO7XQ==}
     engines: {node: ^14.13.1 || >=16.0.0}
     hasBin: true
     dependencies:
